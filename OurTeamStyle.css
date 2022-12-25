@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0.1;
+        line-height: 75px;
+    }
+
+    to {
+        opacity: 1;
+
+        line-height: 30px;
+    }
+}
+html {
+    background-color: black
+}
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+
+header {
+    background-color: #d64c7f;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav img {
+    margin-top: 20px;
+    width: 275px;
+}
+
+
+.navbar {
+    background-color: black;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    margin-right: 15%;
+}
+
+
+.nav-branding {
+    font-size: 2rem;
+    margin-left: 3%;
+}
+
+.nav-item {
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color:#d64c7f;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+.our-team-container {
+    background-color: black;
+}
+
+.ourteam {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    padding-top: 50px;
+}
+
+.team-content-container {
+    background-color: black;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.animated-logo {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+}
+
+.wrapper div {
+    padding: 1em;
+}
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 4em;
+    justify-items: stretch;
+    align-items: stretch;
+    padding-top: 20px;
+}
+
+.box1 {
+    background-color: black;
+    grid-column: 2;
+    grid-row: 1/3;
+    transition: 0.4s ease;
+    border-radius: 24px;
+    text-align: center;
+
+}
+
+.box2 {
+    background-color: black;
+    grid-column: 3;
+    grid-row: 1/3;
+    transition: 0.4s ease;
+    border-radius: 24px;
+    text-align: center;
+
+}
+
+.MichaelPaul {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.UsmanKhan {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.team-man {
+    width: 125px;
+}
+
+.Michael-text {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.Usman-text {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.team-text {
+    font-family: 'Dosis', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    font-size: 24px;
+    margin-left:220px;
+    margin-right: 220px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.ownership-info {
+    font-family: 'Dosis', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    font-size: 24px;
+    margin-left: 220px;
+    margin-right: 220px;
+    margin-top: 40px;
+    margin-bottom: 240px;
+}
+
+.footer-container {
+    background-color: black;
+}
+
+.social-icon {
+    list-style: none;
+    margin: 60px 180px;
+    display: inline-block;
+    font-size: 50px;
+    padding: 110px 110px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5)
+}
+
+@media (max-width:1260px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 115px;
+        gap: 1em;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        border-bottom: solid white;
+    }
+
+    .nav-branding {
+        margin-left: 0%;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .our-team-container {
+        background-color: black;
+    }
+    
+    .ourteam {
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 45px;
+        padding-top: 50px;
+    }
+    
+    .team-content-container {
+        background-color: black;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 40px;
+    }
+    
+    .animated-logo {
+        width: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 24px;
+    }
+    
+    .wrapper div {
+        padding: 1em;
+    }
+    
+    
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 4em;
+        justify-items: stretch;
+        align-items: stretch;
+        padding-top: 20px;
+    }
+    
+    .box1 {
+        background-color: black;
+        grid-column: 1;
+        grid-row: 1/3;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        text-align: center;
+    }
+    
+    .box2 {
+        background-color: black;
+        grid-column: 2;
+        grid-row: 1/3;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        text-align: center;
+    }
+    
+    .MichaelPaul {
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    
+    .UsmanKhan {
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    
+    .team-man {
+        width: 125px;
+    }
+    
+    .Michael-text {
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .Usman-text {
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+    
+    
+    .team-text {
+        font-family: 'Dosis', sans-serif;
+        text-align: justify;
+        text-justify: inter-word;
+        color: white;
+        font-size: 24px;
+        margin-left:110px;
+        margin-right: 110px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .footer-container {
+        background-color: black;
+    }
+    
+    .social-icon {
+        list-style: none;
+        margin: 1px 1px;
+        display: inline-block;
+        font-size: 45px;
+        padding: 100px 105px;
+        color: white;
+        transition: 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5)
+    }
+}
+
+@media (max-width:390px) {
+
+    .our-team-container {
+        background-color: black;
+    }
+    
+    .ourteam {
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    
+    .team-content-container {
+        background-color: black;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 40px;
+    }
+    
+    .animated-logo {
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 24px;
+    }
+    
+    .wrapper div {
+        padding: 1em;
+    }
+    
+    
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 4em;
+        justify-items: stretch;
+        align-items: stretch;
+        padding-top: 20px;
+    }
+
+    .team-text {
+        font-family: 'Dosis', sans-serif;
+        text-align: justify;
+        text-justify: inter-word;
+        color: white;
+        font-size: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .box1 {
+        background-color: black;
+        grid-column: 1;
+        grid-row: 1/3;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        text-align: center;
+    }
+    
+    .box2 {
+        background-color: black;
+        grid-column: 1;
+        grid-row: 3/6;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        text-align: center;
+    }
+    
+    .MichaelPaul {
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    
+    .UsmanKhan {
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    
+    .team-man {
+        width: 125px;
+    }
+    
+    .Michael-text {
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+    .Usman-text {
+        font-family: 'Dosis', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+    .footer-container {
+        background-color: black;
+    }
+    
+    .social-icon {
+        list-style: none;
+        margin: 1px 1px;
+        display: inline-block;
+        font-size: 30px;
+        padding: 45px 45px;
+        color: white;
+        transition: 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5)
+    }
+}

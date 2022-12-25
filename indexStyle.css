@@ -1,0 +1,741 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0.1;
+        line-height: 75px;
+    }
+
+    to {
+        opacity: 1;
+
+        line-height: 30px;
+    }
+}
+html {
+    background-color: black
+}
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+
+header {
+    background-color: #d64c7f;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav img {
+    margin-top: 20px;
+    width: 275px;
+}
+
+
+.navbar {
+    background-color: black;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    margin-right: 15%;
+}
+
+
+.nav-branding {
+    font-size: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-item {
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color:#d64c7f;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+.main{
+    background-color: black;
+    background-size: cover;
+}
+.wrapper div {
+    padding: 1em;
+}
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.box1 {
+    background-color: black;
+    grid-column: 1/1;
+    grid-row: 1/3;
+    transition: 0.4s ease;
+    border-radius: 24px;
+    border: solid white 3px;
+}
+.box1 img {
+    padding-top: 40px;
+    width: 390px;
+}
+.box1:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01)
+}
+.box2 {
+    background-color: black;
+    background-position: center; 
+    background-size: cover; 
+    grid-column: 1;
+    grid-row: 3/6;
+    transition: 0.4s ease;
+    border-radius: 24px;
+    border: solid white 3px;
+}
+.aboutus {
+    font-family: 'Dosis', sans-serif;
+    float: left;
+    margin-top: 390px;
+    font-size: 40px;
+    color: white;
+}
+.box2:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.0);
+    background-color: #d64c7f;
+}    
+.box3 {
+    background-color: black; 
+    background-position: center; 
+    background-size: cover; 
+    grid-column: 2;
+    grid-row: 1/4;
+    transition: 0.4s ease;
+    border-radius: 24px;
+    border: solid white 3px;
+}    
+.ourteam {
+    font-family: 'Dosis', sans-serif;
+    float: left;
+    margin-top: 290px;
+    font-size: 40px;
+    color: white;
+}
+.box3:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    background-color: #5E366B;
+}
+    
+.box4 {
+    background-color: black;
+    grid-column: 2/4;
+    grid-row: 4/6;
+    transition: 0.4s ease;
+    border-radius: 24px;
+    border: solid white 3px;
+}
+.projects {
+    font-family: 'Dosis', sans-serif;
+    float: left;
+    margin-top: 180px;
+    font-size: 40px;
+    color: white;
+}
+.box4:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    background-color: #36ABF8;
+}    
+.box5 {
+    background-color: black;
+    grid-column: 3;
+    grid-row: 1/4;
+    transition: 0.4s ease;
+    border-radius: 24px;
+    border: solid white 3px;
+}
+.codeofconduct {
+    font-family: 'Dosis', sans-serif;
+    float: left;
+    margin-top: 225px;
+    font-size: 40px;
+    color: white;
+}
+.box5:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    background-color: #d64c7f;
+}
+    
+.box6 {
+    background-color: #5E366B;
+    grid-column: 3;
+    grid-row: 4/6;
+    transition: 0.4s ease;
+    border-radius: 24px;
+}
+.box6:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01)
+}
+.box7 {
+    background-color: black;
+    background-position: center; 
+    background-size: cover; 
+    grid-column: 4;
+    grid-row: 1/5;
+    transition: 0.4s ease;
+    border-radius: 24px;
+    border: solid white 3px;
+}
+    
+.fundthefuture {
+    font-family: 'Dosis', sans-serif;
+    float: left;
+    margin-top: 350px;
+    font-size: 40px;
+    color: white;
+}
+    
+.box7:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    background-image: linear-gradient(rgb(4,9,15,0.40),rgba(4,9,15,0.40)), url(images/TlosTree.jpg);
+}
+.box8 {
+    background-color: black;
+    background-size: cover; 
+    background-position: left; 
+    grid-column: 4;
+    grid-row: 5/6;
+    transition: 0.4s ease;
+    border-radius: 24px;
+    border: solid white 3px;
+}
+    
+.vote {
+    font-family: 'Dosis', sans-serif;
+    float: left;
+    margin-top: 87px;
+    font-size: 40px;
+    color: white;
+}
+.box8:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);    
+    background-image: linear-gradient(rgb(4,9,15,0.40),rgba(4,9,15,0.40)), url(images/voter.png);
+
+}
+
+@media (max-width:1260px) {
+    .navbar {
+        background-color: black;
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+    }
+    
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 48px;
+        margin-right: 15%;
+    }
+    
+    
+    .nav-branding {
+        font-size: 2rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-item {
+        font-size: 20px;
+        font-family: 'Dosis', sans-serif;
+    }
+    
+    .nav-link {
+        transition: 0.7s ease;
+    }
+    
+    .nav-link:hover {
+        color:#d64c7f;
+    }
+
+    .main{
+        background-color: black;
+        background-size: cover; 
+    
+    }
+
+    .wrapper div {
+        padding: 1em;
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 1em;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    .box1 {
+        background-color: black;
+        grid-column: 1;
+        grid-row: 1;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }
+    .box1 img {
+        padding-top: 40px;
+        width: 390px;
+    }
+    .box1:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01)
+    }
+    .box2 {
+        background-color: black;
+        background-position: center; 
+        background-size: cover; 
+        grid-column: 2;
+        grid-row: 1/2;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }
+    .aboutus {
+        font-family: 'Dosis', sans-serif;
+        float: left;
+        margin-top: 390px;
+        font-size: 40px;
+        color: white;
+    }
+    .box2:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.0);
+        background-color: #d64c7f;
+    }    
+    .box3 {
+        background-color: black; 
+        background-position: center; 
+        background-size: cover; 
+        grid-column: 1;
+        grid-row: 2/3;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }    
+    .ourteam {
+        font-family: 'Dosis', sans-serif;
+        float: left;
+        margin-top: 290px;
+        font-size: 40px;
+        color: white;
+    }
+    .box3:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        background-color: #5E366B;
+    }
+        
+    .box4 {
+        background-color: black;
+        grid-column: 2;
+        grid-row: 2/3;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }
+
+    .projects {
+        font-family: 'Dosis', sans-serif;
+        float: left;
+        margin-top: 180px;
+        font-size: 40px;
+        color: white;
+    }
+    .box4:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        background-color: #36ABF8;
+    }    
+    .box5 {
+        background-color: black;
+        grid-column: 1;
+        grid-row: 3/4;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }
+    .codeofconduct {
+        font-family: 'Dosis', sans-serif;
+        float: left;
+        margin-top: 225px;
+        font-size: 40px;
+        color: white;
+    }
+    .box5:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        background-color: #d64c7f;
+    }
+        
+    .box6 {
+        background-color: #5E366B;
+        grid-column: 1;
+        grid-row: 3/4;
+        transition: 0.4s ease;
+        border-radius: 24px;
+    }
+    .box6:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01)
+    }
+    .box7 {
+        background-color: black;
+        background-position: center; 
+        background-size: cover; 
+        grid-column: 1/3;
+        grid-row: 4/5;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }
+        
+    .fundthefuture {
+        font-family: 'Dosis', sans-serif;
+        float: left;
+        margin-top: 350px;
+        font-size: 40px;
+        color: white;
+    }
+        
+    .box7:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        background-image: linear-gradient(rgb(4,9,15,0.40),rgba(4,9,15,0.40)), url(images/TlosTree.jpg);
+    }
+    .box8 {
+        background-color: black;
+        background-size: cover; 
+        background-position: left; 
+        grid-column: 2;
+        grid-row: 3/4;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }
+        
+    .vote {
+        font-family: 'Dosis', sans-serif;
+        float: left;
+        margin-top: 87px;
+        font-size: 40px;
+        color: white;
+    }
+    .box8:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);    
+        background-image: linear-gradient(rgb(4,9,15,0.40),rgba(4,9,15,0.40)), url(images/voter.png);
+    
+    }
+}
+
+@media (max-width: 390px ) {
+    .navbar {
+        background-color: black;
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+    }
+    
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 48px;
+        margin-right: 15%;
+    }
+    
+    
+    .nav-branding {
+        font-size: 2rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-item {
+        font-size: 20px;
+        font-family: 'Dosis', sans-serif;
+    }
+    
+    .nav-link {
+        transition: 0.7s ease;
+    }
+    
+    .nav-link:hover {
+        color:#d64c7f;
+    }
+
+    .main{
+        background-color: black;
+        background-size: cover; 
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .wrapper div {
+        padding: 1em;
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 1em;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    .box1 {
+        background-color: black;
+        grid-column: 1;
+        grid-row: 1;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }
+    .box1 img {
+        padding-top: 40px;
+        width: 300px;
+    }
+    .box1:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01)
+    }
+    .box2 {
+        background-color: black;
+        background-position: center; 
+        background-size: cover; 
+        grid-column: 1;
+        grid-row: 2;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }
+    .aboutus {
+        font-family: 'Dosis', sans-serif;
+        float: left;
+        margin-top: 390px;
+        font-size: 40px;
+        color: white;
+    }
+    .box2:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.0);
+        background-color: #d64c7f;
+    }    
+    .box3 {
+        background-color: black; 
+        background-position: center; 
+        background-size: cover; 
+        grid-column: 1;
+        grid-row: 3;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }    
+    .ourteam {
+        font-family: 'Dosis', sans-serif;
+        float: left;
+        margin-top: 290px;
+        font-size: 40px;
+        color: white;
+    }
+    .box3:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        background-color: #5E366B;
+    }
+        
+    .box4 {
+        background-color: black;
+        grid-column: 1;
+        grid-row: 4;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }
+
+    .projects {
+        font-family: 'Dosis', sans-serif;
+        float: left;
+        margin-top: 180px;
+        font-size: 40px;
+        color: white;
+    }
+    .box4:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        background-color: #36ABF8;
+    }    
+    .box5 {
+        background-color: black;
+        grid-column: 1;
+        grid-row: 5;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }
+    .codeofconduct {
+        font-family: 'Dosis', sans-serif;
+        float: left;
+        margin-top: 225px;
+        font-size: 40px;
+        color: white;
+    }
+    .box5:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        background-color: #d64c7f;
+    }
+    .box7 {
+        background-color: black;
+        background-position: center; 
+        background-size: cover; 
+        grid-column: 1;
+        grid-row: 6;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }
+        
+    .fundthefuture {
+        font-family: 'Dosis', sans-serif;
+        float: left;
+        margin-top: 350px;
+        font-size: 40px;
+        color: white;
+    }
+        
+    .box7:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        background-image: linear-gradient(rgb(4,9,15,0.40),rgba(4,9,15,0.40)), url(images/TlosTree.jpg);
+    }
+    .box8 {
+        background-color: black;
+        background-size: cover; 
+        background-position: left; 
+        grid-column: 1;
+        grid-row: 7;
+        transition: 0.4s ease;
+        border-radius: 24px;
+        border: solid white 3px;
+    }
+        
+    .vote {
+        font-family: 'Dosis', sans-serif;
+        float: left;
+        margin-top: 87px;
+        font-size: 40px;
+        color: white;
+    }
+    .box8:hover {
+        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);    
+        background-image: linear-gradient(rgb(4,9,15,0.40),rgba(4,9,15,0.40)), url(images/voter.png);
+    
+    }
+}
