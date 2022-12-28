@@ -14,7 +14,7 @@ document.querySelectorAll(".nav-link"). forEach(n => n.addEventListener("click",
 }))
 
 const appearOptions = {
-    threshold: 0.3
+    threshold: 0.2
 };
 const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
     entries.forEach(entry => {
